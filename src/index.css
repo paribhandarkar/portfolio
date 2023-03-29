@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fanwood+Text:ital@0;1&display=swap");
+
+/* font-family: 'Changa One', cursive;
+font-family: 'Fanwood Text', serif; */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: #ffc3de;
+}
+
+
+

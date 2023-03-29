@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fanwood+Text:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading-text: "Changa One", cursive;
+  --body-text: "Fanwood Text", serif;
+  --cream: #f8eeec;
+  --orange: #e85c3b;
+  --black: #222222;
+  --pink: #ffc3de;
+  --red: #e32450;
+  --midnight-blue: #181c52;
+  --border: 2px solid var(--black);
+}
+
+.hero-section {
+  background-color: var(--pink);
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+h2 {
+  text-align: center;
+  font-family: var(--heading-text);
+}
+
+.intro {
+  color: var(--midnight-blue);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.description {
+  color: var(--red);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  max-width: 1000px;
+}
+
+.orange-star-one {
+  position: absolute;
+  left: 2%;
+  top: 80px;
+  width: 2.9vw;
+  animation: scale 4s infinite linear;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.orange-star-two {
+  position: absolute;
+  left: 8.5%;
+  top: 120px;
+  width: 3vw;
+  animation: rotation-cw 7s infinite linear;
+}
+
+@keyframes rotation-cw {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.white-star-one {
+  position: absolute;
+  left: 3%;
+  top: 150px;
+  width: 4.5vw;
+  animation: rotation-acw 11s infinite linear;
+}
+
+@keyframes rotation-acw {
+  from {
+    transform: rotate(359deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.moon {
+  position: absolute;
+  left: 6.5%;
+  top: 40px;
+  width: 4.7vw;
+  animation: shake 5s infinite ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.orange-star-three {
+  position: absolute;
+  right: 3%;
+  top: 70px;
+  width: 8vw;
+  height: 8vw;
+  animation: rotation-cw 7s infinite linear;
+}
+
+.ellipse-one {
+  position: absolute;
+  width: 0.7vw;
+  right: 6%;
+  top: 20px;
+}
+
+.ellipse-two {
+  position: absolute;
+  width: 0.9vw;
+  right: 12%;
+  top: 60px;
+}
+
+.ellipse-three {
+  position: absolute;
+  width: 0.9vw;
+  right: 2%;
+  top: 140px;
+}
+
+.flower-one {
+  position: absolute;
+  left: 25%;
+  top: 483px;
+  width: 8vw;
+  height: 8vw;
+  animation: rotation-cw 7s infinite linear;
+}
+
+.white-star-two {
+  position: absolute;
+  left: 22%;
+  top: 470px;
+  width: 3vw;
+  animation: rotation-acw 11s infinite linear;
+}
+
+.orange-star-four {
+  position: absolute;
+  left: 23.5%;
+  top: 540px;
+  width: 1.5vw;
+  animation: scale 3s infinite linear;
+}
+
+.purple-star{
+    position: absolute;
+    right: 10%;
+    top: 440px;
+    width: 8vw;
+    height: 8vw;
+    animation: rotation-acw 14s infinite linear;
+}
+
+.white-star-three {
+    position: absolute;
+    right: 16%;
+    top: 520px;
+    width: 2vw;
+    animation: scale 3s infinite linear;
+  }
