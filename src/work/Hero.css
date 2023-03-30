@@ -177,19 +177,19 @@ h2 {
   animation: scale 3s infinite linear;
 }
 
-.purple-star{
-    position: absolute;
-    right: 10%;
-    top: 440px;
-    width: 8vw;
-    height: 8vw;
-    animation: rotation-acw 14s infinite linear;
+.purple-star {
+  position: absolute;
+  right: 10%;
+  top: 440px;
+  width: 8vw;
+  height: 8vw;
+  animation: rotation-acw 14s infinite linear;
 }
 
 .white-star-three {
-    position: absolute;
-    right: 16%;
-    top: 520px;
-    width: 2vw;
-    animation: scale 3s infinite linear;
-  }
+  position: absolute;
+  right: 16%;
+  top: 520px;
+  width: 2vw;
+  animation: scale 3s infinite linear;
+}
