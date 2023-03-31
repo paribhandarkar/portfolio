@@ -1,16 +1,20 @@
-import React from 'react';
-import NavBar from './common components/NavBar';
-import Hero from './work/Hero';
-import ProjectOverview from './work/projects/ProjectOverview';
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./about/About";
+import Contact from "./contact/Contact";
+import Work from "./work/Work";
+import NavBar from "./common components/NavBar";
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
       <NavBar />
-      <Hero />
-      <ProjectOverview />
-    </div>
+      <Routes>
+        <Route path="/" element={<Work />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
