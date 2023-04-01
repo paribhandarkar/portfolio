@@ -31,7 +31,7 @@
 .hire-me {
   position: relative;
   top: 1%;
-  left: -200px;
+  left: -700px;
   white-space: nowrap;
 
   display: flex;
@@ -49,3 +49,47 @@
   height: 30px;
   margin-right: 0;
 }
+
+.contact-section {
+  display: flex;
+  align-items: center;
+  padding: 75px 2%;
+  background-color: var(--cream);
+}
+
+.contact-line {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34.5029px;
+  font-family: var(--heading-text);
+  max-width: 572px;
+}
+
+.icon-link {
+  height: 22px;
+  width: 40px;
+}
+
+.contact-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 150px;
+}
+
+.last-line {
+  height: 38px;
+  background-color: var(--orange);
+  border: var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.last-line p {
+  font-family: var(--body-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+}
+
