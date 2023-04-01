@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fanwood+Text:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading-text: "Changa One", cursive;
+  --body-text: "Fanwood Text", serif;
+  --cream: #f8eeec;
+  --orange: #e85c3b;
+  --black: #222222;
+  --pink: #ffc3de;
+  --red: #e32450;
+  --purple: #c58bf1;
+  --midnight-blue: #181c52;
+  --border: 2px solid var(--black);
+}
+
+.hire-me-scroll {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--purple);
+  height: 60px;
+  border: var(--border);
+  display: flex;
+  align-items: center;
+}
+
+.hire-me {
+  position: relative;
+  top: 1%;
+  left: -200px;
+  white-space: nowrap;
+
+  display: flex;
+  align-items: center;
+
+  font-family: var(--heading-text);
+  color: var(--black);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.2222px;
+  text-transform: uppercase;
+}
+
+.hire-me-star {
+  height: 30px;
+  margin-right: 0;
+}
