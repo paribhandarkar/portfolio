@@ -51,8 +51,39 @@ const About = () => {
       </div>
       <div className="about-design">
         <p>🤍 I believe that design starts with people.</p>
-        <p>As a developer with a background in design, I aim to have a human-centered approach. If there is anything I have learned, with our power as developers who are crafting people's experiences, we cannot afford not to be human-centric. </p>
-        <p>I ultimately hope to put out work positively impacting people's lives and continue to be mindful of my designs.</p>
+        <p>
+          As a developer with a background in design, I aim to have a
+          human-centered approach. If there is anything I have learned, with our
+          power as developers who are crafting people's experiences, we cannot
+          afford not to be human-centric.{" "}
+        </p>
+        <p>
+          I ultimately hope to put out work positively impacting people's lives
+          and continue to be mindful of my designs.
+        </p>
+      </div>
+      <div className="tech-stack">
+        <div className="tech-stack-intro">
+          <h6>Skills and Tools</h6>
+          <div className="tech-stack-indicator">
+            <div className="tech-stack-bar"></div>
+            <div className="tech-stack-bar-text">
+              <span>Occasionally</span>
+              <span>Frequently Used</span>
+            </div>
+          </div>
+        </div>
+        <div className="tech-stack-lang">
+          <h6 className="skill-field-main">Languages</h6>
+          <div className="skill-field-area">
+            <h5 className="skill-field">FE related</h5>
+            <div className="skill-boxes">
+              <span className="skilled-box">HTML</span>
+              <span className="skilled-box">CSS</span>
+              <span className="skilled-box">JavaScript</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

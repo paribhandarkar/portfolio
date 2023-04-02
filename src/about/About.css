@@ -137,3 +137,72 @@
 .about-design p:nth-child(2) {
   margin: 157px auto 60px auto;
 }
+
+.tech-stack {
+  margin-top: 230px;
+}
+
+.tech-stack-intro {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.tech-stack-intro h6 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34.3581px;
+  font-family: var(--heading-text);
+}
+
+.tech-stack-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tech-stack-bar {
+  height: 36.7px;
+  width: 487.26px;
+  background: linear-gradient(90deg, #c58bf1 0%, #181c52 100%);
+  border: var(--border);
+}
+
+.tech-stack-bar-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-field-main {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  font-family: var(--heading-text);
+
+  margin: 50px auto;
+  text-align: center;
+}
+
+.skill-field {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.6368px;
+  font-family: var(--body-text);
+  text-align: left;
+}
+
+.skilled-box {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.6368px;
+  line-height: 22px;
+  color: var(--cream);
+  background-color: var(--midnight-blue);
+  border: var(--border);
+  padding: 12px 20px;
+}
+
+.skill-field-area{
+    display: flex;
+    justify-content: space-around;
+}
