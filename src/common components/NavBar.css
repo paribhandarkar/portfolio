@@ -30,13 +30,13 @@
   margin: 8px 50px;
 }
 
-img {
+.logo-img {
   width: 73.04px;
   margin-right: 20px;
   height: 60px;
 }
 
-h1 {
+.logo-heading {
   font-style: normal;
   font-weight: 400;
   font-size: 26.2222px;
@@ -62,11 +62,11 @@ a:hover {
   color: var(--orange);
 }
 
-h1:hover {
+.logo-heading:hover {
   font-style: italic;
   cursor: pointer;
 }
 
-.logo-section:hover{
+.logo-section:hover {
   cursor: pointer;
 }

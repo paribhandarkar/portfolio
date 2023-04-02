@@ -7,8 +7,8 @@ const NavBar = () => {
   return (
     <div className="navbar">
       <div className="logo-section">
-        <img src={logo} alt="logo" />
-        <h1>Pari Bhandarkar</h1>
+        <img src={logo} alt="logo" className="logo-img" />
+        <h1 className="logo-heading">Pari Bhandarkar</h1>
       </div>
       <div className="nav-section">
         {/* <a className="squiggle" href="#section">Work</a>

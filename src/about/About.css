@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fanwood+Text:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading-text: "Changa One", cursive;
+  --body-text: "Fanwood Text", serif;
+  --cream: #f8eeec;
+  --orange: #e85c3b;
+  --black: #222222;
+  --pink: #ffc3de;
+  --red: #e32450;
+  --midnight-blue: #181c52;
+  --border: 2px solid var(--black);
+}
+
+.main-about {
+  background-color: var(--cream);
+}
+
+.about-header {
+  background: url("./images/about-hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 90vh;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 153.957px;
+  font-family: var(--heading-text);
+  color: var(--cream);
+  -webkit-text-stroke: 4px black;
+}
+
+.about-header:hover {
+  background: url("./images/about-hero.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 90vh;
+}
+
+.about-nav {
+  background-color: var(--cream);
+  width: fit-content;
+  border: var(--border);
+  padding: 15px 30px;
+  font-family: var(--body-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.about-nav p {
+  padding-bottom: 15px;
+}
+
+.about-nav ol li {
+  padding-bottom: 5px;
+}
+
+.about-nav-links {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.about-why-cute {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--cream);
+  margin: 120px 5%;
+  padding: 5%;
+}
+
+.about-why-cute-dialog {
+  background-color: var(--pink);
+  font-family: var(--body-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 23.4963px;
+  text-align: justify;
+
+  max-width: 500.59px;
+  max-height: 409.86px;
+  border: var(--border);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 4%;
+}
+
+.about-why-cute div {
+  background: url("./images/about-why.jpeg");
+  background-size: contain;
+  background-position: center;
+  width: 356.46px;
+  height: 475.28px;
+  border: var(--border);
+}
+
+.about-why-cute div:hover {
+  background: url("./images/about-why.gif");
+  background-size: contain;
+  background-position: center;
+}
+
+.about-design {
+  max-width: 767px;
+  margin: auto;
+}
+
+.about-design p {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.4963px;
+  font-family: var(--body-text);
+}
+
+.about-design p:nth-child(1) {
+  margin: 177px auto;
+}
+
+.about-design p:nth-child(2) {
+  margin: 157px auto 60px auto;
+}

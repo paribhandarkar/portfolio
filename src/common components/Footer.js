@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./Footer.css";
 import star from "../work/stickers/export-star.svg";
 import Button from "./Button";
@@ -9,17 +9,21 @@ import github from "../work/stickers/github.svg";
 import insta from "../work/stickers/instagram.svg";
 
 const Footer = () => {
-  const lineone = document.querySelector(".hire-me");
+  const [leftPos, setLeftPos] = useState(-600);
 
-  window.onscroll = () => {
-    let pos = window.scrollY - 600;
-    lineone.style.left = `${pos}px`;
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const pos = window.scrollY - 600;
+      setLeftPos(pos);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
       <div className="hire-me-scroll">
-        <h5 className="hire-me">
+        <h5 className="hire-me" style={{ left: `${leftPos}px` }}>
           Hire me <img src={star} alt="hire me" className="hire-me-star" /> Hire
           me <img src={star} alt="hire me" className="hire-me-star" /> Hire me
           <img src={star} alt="hire me" className="hire-me-star" />
