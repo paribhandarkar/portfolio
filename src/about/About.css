@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -13,6 +14,7 @@
   --black: #222222;
   --pink: #ffc3de;
   --red: #e32450;
+  --purple: #c58bf1;
   --midnight-blue: #181c52;
   --border: 2px solid var(--black);
 }
@@ -144,8 +146,9 @@
 
 .tech-stack-intro {
   display: flex;
-  justify-content: center;
-  gap: 50px;
+  justify-content: space-between;
+  margin: auto 12%;
+  /* gap: 50px; */
 }
 
 .tech-stack-intro h6 {
@@ -171,6 +174,7 @@
 .tech-stack-bar-text {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
 }
 
 .skill-field-main {
@@ -200,9 +204,209 @@
   background-color: var(--midnight-blue);
   border: var(--border);
   padding: 12px 20px;
+  margin: 27px;
 }
 
-.skill-field-area{
-    display: flex;
-    justify-content: space-around;
+.unskilled-box {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16.6368px;
+  line-height: 22px;
+  color: var(--black);
+  background-color: var(--purple);
+  border: var(--border);
+  padding: 12px 20px;
+  margin: 27px;
+}
+
+.skill-field-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 12%;
+}
+
+.skill-boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-free-time {
+  margin: 300px 3%;
+}
+
+.about-free-time-para {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.5px;
+  text-align: center;
+  color: var(--black);
+  font-family: var(--body-text);
+  margin: auto;
+}
+
+.about-free-time-para.p2 {
+  width: 861px;
+}
+
+.about-free-time-para.p1 {
+  width: 767px;
+}
+
+.about-free-time-img1 {
+  width: 499px;
+  height: 374px;
+  background: url("./images/about-cafe.jpeg");
+  background-position: center;
+  background-size: cover;
+  border: var(--border);
+  margin: 112px auto;
+}
+
+.about-free-time-img1:hover {
+  background: url("./images/about-cafe.gif");
+  background-position: center;
+  background-size: cover;
+  border: var(--border);
+}
+
+.about-free-time-img2 {
+  width: 335px;
+  height: 447px;
+  background: url("./images/about-cafe-hopping.jpeg");
+  background-position: center;
+  background-size: cover;
+  border: var(--border);
+}
+
+.about-free-time-img2:hover {
+  background: url("./images/about-cafe-hopping.gif");
+  background-position: center;
+  background-size: cover;
+  border: var(--border);
+}
+
+.about-cafe-hopping {
+  background-color: var(--orange);
+  padding: 30px 45px;
+  border: var(--border);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.4963px;
+  text-align: justify;
+  font-family: var(--body-text);
+  max-width: 608.59px;
+  max-height: 409.86px;
+}
+
+.about-cafe-hopping-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 170px auto;
+}
+
+.notes-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.4963px;
+  color: var(--black);
+  font-family: var(--body-text);
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.notes-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+}
+
+.notes-point {
+  width: 223.09px;
+}
+
+.notes-point p:nth-child(1) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 87.3095px;
+  font-family: var(--body-text);
+  text-align: center;
+}
+
+.notes-point p:nth-child(2) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.3858px;
+  font-family: var(--body-text);
+  text-align: center;
+}
+
+.maybe-some-day {
+  /* margin-top: 200px; */
+  margin: 200px auto;
+}
+
+.maybe-heading {
+  font-style: normal;
+  text-align: center;
+  font-weight: 400;
+  font-size: 26.4963px;
+  line-height: 35px;
+  font-family: var(--body-text);
+  color: var(--black);
+  margin-bottom: 75px;
+}
+
+.maybe-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.maybe-para {
+  font-family: "Fanwood Text";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.4963px;
+  font-family: var(--body-text);
+  max-width: 481px;
+}
+
+.maybe-list {
+  margin-top: 20px;
+}
+
+.maybe-image {
+  width: 447.12px;
+  height: 349px;
+  background: url("./images/about-someday.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: var(--border);
+}
+
+.maybe-image:hover {
+  background: url("./images/about-someday.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: var(--border);
+}
+
+.to-top {
+  text-align: center;
+  font-family: var(--body-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26.4963px;
+  line-height: 35px;
+  margin-bottom: 50px;
+  text-decoration: underline;
+}
+
+.to-top a{
+  text-decoration: none;
+  color: var(--black);
 }
