@@ -1,4 +1,4 @@
-button {
+.common-button {
   background-color: var(--orange);
   color: var(--black);
   border: var(--border);
@@ -10,7 +10,7 @@ button {
   transition: all 0.5s;
 }
 
-button:hover {
+.common-button:hover {
   cursor: pointer;
 
   box-shadow: 5px 5px 0px 0px var(--black);

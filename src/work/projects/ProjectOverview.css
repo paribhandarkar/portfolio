@@ -21,7 +21,120 @@
   background: rgb(248, 238, 236);
   background: linear-gradient(
     0deg,
-    rgba(248, 238, 236, 1) 73%,
+    rgba(248, 238, 236, 1) 93%,
     rgba(255, 195, 222, 1) 100%
   );
+  margin-top: 40px;
+  /* border: var(--border);
+  background-color: var(--cream); */
+}
+
+.proud-project-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62.7953px;
+  font-family: var(--heading-text);
+  margin-top: 50px;
+}
+
+.loved-project-heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62.7953px;
+  font-family: var(--heading-text);
+  margin-top: 50px;
+  max-width: 763px;
+  text-align: center;
+  margin: auto;
+  padding: 70px 0;
+
+}
+
+.loved-project-heading a{
+  color: var(--black);
+  text-decoration: none;
+}
+
+.loved-project-heading a:hover {
+  color: var(--black);
+}
+
+.loved-project-heading:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.staple-section {
+  padding: 7%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+}
+
+.staple-image {
+  max-width: 550px;
+}
+
+.staple-overview-heading {
+  font-family: var(--heading-text);
+  color: var(--black);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+}
+
+.staple-overview-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.staple-overview-para {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: var(--body-text);
+  color: var(--black);
+}
+
+.overview-button-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.overview-button {
+  color: var(--black);
+  border: var(--border);
+  border-radius: 40px;
+  padding: 15px 25px;
+  font-family: var(--heading-text);
+  font-size: 20px;
+  transition: all 0.5s;
+}
+
+.overview-button.primary {
+  background-color: var(--orange);
+}
+
+.overview-button.secondary {
+  background-color: transparent;
+}
+
+.overview-button:hover {
+  cursor: pointer;
+
+  box-shadow: 5px 5px 0px 0px var(--black);
+  -webkit-box-shadow: 5px 5px 0px 0px var(--black);
+  -moz-box-shadow: 5px 5px 0px 0px var(--black);
+
+  translate: -5px -5px;
+}
+
+.portfolio-section {
+  padding: 7%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5%;
+  min-height: 500px;
 }

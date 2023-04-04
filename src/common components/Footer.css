@@ -31,7 +31,8 @@
 .hire-me {
   position: relative;
   top: 1%;
-  left: -700px;
+  /* left: -700px; */
+  left: -2100px;
   white-space: nowrap;
 
   display: flex;

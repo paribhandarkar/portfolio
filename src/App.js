@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Contact from "./contact/Contact";
 import Work from "./work/Work";
 import NavBar from "./common components/NavBar";
+import MiniProjects from './work/projects/MiniProjects'
 const LazyAbout = React.lazy(() => import("./about/About"));
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           }
         />
         <Route path="contact" element={<Contact />} />
+        <Route path="mini-projects" element={<MiniProjects />}/>
       </Routes>
     </BrowserRouter>
   );

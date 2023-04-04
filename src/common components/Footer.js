@@ -9,11 +9,12 @@ import github from "../work/stickers/github.svg";
 import insta from "../work/stickers/instagram.svg";
 
 const Footer = () => {
-  const [leftPos, setLeftPos] = useState(-600);
+  const [leftPos, setLeftPos] = useState(-2100);
+  // const [leftPos, setLeftPos] = useState(-600);
 
   useEffect(() => {
     const handleScroll = () => {
-      const pos = window.scrollY - 600;
+      const pos = window.scrollY - 2100;
       setLeftPos(pos);
     };
     window.addEventListener("scroll", handleScroll);
