@@ -37,6 +37,18 @@
   margin-top: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .proud-project-heading,
+  .loved-project-heading a {
+    font-size: 43px;
+    margin-top: 0;
+  }
+
+  .project-overview-section{
+    margin-top: 0;
+  }
+}
+
 .loved-project-heading {
   font-style: normal;
   font-weight: 400;
@@ -47,10 +59,9 @@
   text-align: center;
   margin: auto;
   padding: 70px 0;
-
 }
 
-.loved-project-heading a{
+.loved-project-heading a {
   color: var(--black);
   text-decoration: none;
 }
@@ -73,6 +84,40 @@
 
 .staple-image {
   max-width: 550px;
+}
+
+@media screen and (max-width: 768px) {
+  .staple-image {
+    max-width: 271px;
+  }
+
+  .staple-section,
+  .portfolio-section {
+    /* display: block; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #staple-overview-heading,
+  #portfolio-overview-heading {
+    font-size: 34px;
+    text-align: center;
+    margin: 5% auto;
+  }
+
+  .staple-overview-para {
+    text-align: justify;
+    font-size: 18px;
+    margin: 5% auto;
+  }
+
+  #portfolio-button-source,
+  #portfolio-button-code,
+  #staple-button-source,
+  #staple-button-code {
+    padding: 10px 18px;
+  }
 }
 
 .staple-overview-heading {

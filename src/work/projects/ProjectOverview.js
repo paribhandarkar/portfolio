@@ -11,7 +11,7 @@ const ProjectOverview = () => {
       <div className="staple-section">
         <img src={staple} alt="staple screen shot" className="staple-image" />
         <div className="staple-overview-content">
-          <h4 className="staple-overview-heading">
+          <h4 className="staple-overview-heading" id="staple-overview-heading">
             A web based portal for farmers ‐ Staple
           </h4>
           <p className="staple-overview-para">
@@ -21,8 +21,30 @@ const ProjectOverview = () => {
             healthy rice farming practices.
           </p>
           <div className="overview-button-section">
-            <button className="overview-button primary">Source Code</button>
-            <button className="overview-button secondary">Code Journey</button>
+            <a
+              href="https://github.com/paribhandarkar/portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                className="overview-button primary"
+                id="staple-button-source"
+              >
+                Source Code
+              </button>
+            </a>
+            <a
+              href="https://github.com/paribhandarkar/portfolio"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                className="overview-button secondary"
+                id="staple-button-code"
+              >
+                Code Journey
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -33,7 +55,12 @@ const ProjectOverview = () => {
           className="staple-image"
         />
         <div className="staple-overview-content">
-          <h4 className="staple-overview-heading">Personal Portfolio</h4>
+          <h4
+            className="staple-overview-heading"
+            id="portfolio-overview-heading"
+          >
+            Personal Portfolio
+          </h4>
           <p className="staple-overview-para">
             My portfolio project is a reflection of my creativity, technical
             skill, and unique perspective as a front end developer. I've
@@ -47,14 +74,24 @@ const ProjectOverview = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button className="overview-button primary">Source Code</button>
+              <button
+                className="overview-button primary"
+                id="portfolio-button-source"
+              >
+                Source Code
+              </button>
             </a>
-            <button className="overview-button secondary">Code Journey</button>
+            <button
+              className="overview-button secondary"
+              id="portfolio-button-code"
+            >
+              Code Journey
+            </button>
           </div>
         </div>
       </div>
       <h4 className="loved-project-heading">
-        <NavLink to="/mini-projects">
+        <NavLink to="/mini-projects" >
           Projects that still deserve love →
         </NavLink>
       </h4>

@@ -48,6 +48,21 @@ h2 {
   max-width: 1000px;
 }
 
+@media screen and (max-width: 768px) {
+  .description {
+    font-size: 50px;
+    overflow-x: hidden;
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .description {
+    font-size: 35px;
+    padding: 4%;
+  }
+}
+
 .orange-star-one {
   position: absolute;
   left: 2%;

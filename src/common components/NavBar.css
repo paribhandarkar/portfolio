@@ -70,3 +70,24 @@ a:hover {
 .logo-section:hover {
   cursor: pointer;
 }
+
+.mobile-menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-section {
+    display: none;
+  }
+
+  .nav-section-mobile{
+    display: block;
+    transition: all 0.5s ease-out;
+    width: 100%;
+  }
+
+  .mobile-menu-icon{
+    display: block;
+    outline: none;
+  }
+}

@@ -23,6 +23,17 @@
   background-color: var(--cream);
 }
 
+@media screen and (max-width: 768px) {
+  .about-header {
+    flex-direction: column;
+  }
+  .about-header .main-heading {
+    font-size: 100px;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+  }
+}
+
 .about-header {
   background: url("./images/about-hero.jpeg");
   background-repeat: no-repeat;
@@ -106,11 +117,47 @@
 
 .about-why-cute div {
   background: url("./images/about-why.jpeg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   width: 356.46px;
   height: 475.28px;
   border: var(--border);
+}
+
+@media screen and (max-width: 768px) {
+  #about-me div {
+    background: url("./images/about-why.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300.46px;
+    height: 410.28px;
+  }
+  .about-why-cute {
+    flex-direction: column;
+  }
+
+  .about-why-cute-dialog {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .about-design p:nth-child(1),
+  .about-design p:nth-child(2),
+  .about-design p:nth-child(3) {
+    font-size: 20px;
+    padding: 7%;
+    text-align: justify;
+  }
+
+  #about-design-first {
+    margin: 10px auto;
+  }
+
+  #about-design-second {
+    margin: 10px auto;
+  }
 }
 
 .about-why-cute div:hover {
@@ -138,6 +185,71 @@
 
 .about-design p:nth-child(2) {
   margin: 157px auto 60px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .tech-stack-intro {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #tech-stack-bar {
+    width: 271px;
+    height: 20px;
+    background: linear-gradient(90deg, #c58bf1 0%, #181c52 100%);
+  }
+
+  .tech-stack-intro h6 {
+    margin-bottom: 30px;
+  }
+
+  .about-free-time-para.p1,
+  .about-free-time-para.p2 {
+    font-size: 20px;
+    padding: 7%;
+    text-align: justify;
+  }
+
+  #muse .about-free-time-para.p1,
+  #muse .about-free-time-para.p2 {
+    width: fit-content;
+  }
+
+  #muse {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+
+  #muse .about-free-time-img1 {
+    background: url("./images/about-cafe.gif");
+    background-position: center;
+    background-size: cover;
+    border: var(--border);
+    width: 218px;
+    height: 163.39px;
+    margin: 20px auto;
+  }
+
+  #muse .about-cafe-hopping-div {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 5%;
+  }
+
+  #muse .about-cafe-hopping {
+    font-size: 20px;
+    padding: 7%;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+
+  #muse .about-free-time-img2 {
+    background: url("./images/about-cafe-hopping.gif");
+    background-position: center;
+    background-size: cover;
+    border: var(--border);
+  }
 }
 
 .tech-stack {
@@ -193,6 +305,28 @@
   font-size: 16.6368px;
   font-family: var(--body-text);
   text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .skill-boxes .unskilled-box,
+  .skill-boxes .skilled-box {
+    margin: 10px 1px;
+    padding: 10px;
+  }
+
+  #tech-stack {
+    margin-top: 100px;
+  }
+
+  .skill-boxes {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .skill-field-area {
+    flex-direction: column;
+  }
 }
 
 .skilled-box {
@@ -297,7 +431,8 @@
   text-align: justify;
   font-family: var(--body-text);
   max-width: 608.59px;
-  max-height: 409.86px;
+  max-height: fit-content;
+  /* max-height: 409.86px; */
 }
 
 .about-cafe-hopping-div {
@@ -335,6 +470,19 @@
   text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+  .notes-point p:nth-child(1) {
+    font-size: 47px;
+  }
+
+  .notes-row {
+    margin: 30px;
+  }
+
+  .notes-point p {
+    padding: 1%;
+  }
+}
 .notes-point p:nth-child(2) {
   font-style: normal;
   font-weight: 400;
@@ -395,6 +543,33 @@
   border: var(--border);
 }
 
+@media screen and (max-width: 768px) {
+  #maybe-some-day .maybe-div {
+    flex-direction: column;
+  }
+
+  #maybe-some-day {
+    /* padding: 3%; */
+    margin-bottom: 50px;
+  }
+
+  #maybe-some-day .maybe-para{
+    margin: 7%;
+    padding: 3%;
+  }
+
+  .maybe-image {
+    width: 241.12px;
+    height: 188.21px;
+    background: url("./images/about-someday.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: var(--border);
+    margin: 20px auto;
+  }
+}
+
 .to-top {
   text-align: center;
   font-family: var(--body-text);
@@ -406,7 +581,7 @@
   text-decoration: underline;
 }
 
-.to-top a{
+.to-top a {
   text-decoration: none;
   color: var(--black);
 }

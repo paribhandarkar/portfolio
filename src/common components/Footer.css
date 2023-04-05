@@ -67,6 +67,17 @@
   max-width: 572px;
 }
 
+@media screen and (max-width: 768px) {
+  .contact-line {
+    font-size: 24px;
+  }
+
+  #last-line{
+    font-size: 16px;
+    padding: 1.5%;
+  }
+}
+
 .icon-link {
   height: 22px;
   width: 40px;
@@ -80,12 +91,13 @@
 }
 
 .last-line {
-  height: 38px;
+  /* height: 38px; */
   background-color: var(--orange);
   border: var(--border);
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 0.7% 0;
 }
 
 .last-line p {
@@ -93,5 +105,5 @@
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
+  text-align: center;
 }
-

@@ -89,7 +89,7 @@ const Footer = () => {
       </div>
 
       <div className="last-line">
-        <p>This is all there is. Were you expecting more? It's okay, me too.</p>
+        <p id="last-line">This is all there is. Were you expecting more? It's okay, me too.</p>
       </div>
     </>
   );

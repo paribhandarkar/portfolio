@@ -19,3 +19,9 @@
 
   translate: -5px -5px;
 }
+
+@media screen and (max-width: 768px) {
+  .common-button{
+    padding: 10px 30px;
+  }
+}

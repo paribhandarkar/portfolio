@@ -51,8 +51,8 @@ const About = () => {
         </p>
       </div>
       <div className="about-design">
-        <p>🤍 I believe that design starts with people.</p>
-        <p>
+        <p id="about-design-first">🤍 I believe that design starts with people.</p>
+        <p id="about-design-second">
           As a developer with a background in design, I aim to have a
           human-centered approach. If there is anything I have learned, with our
           power as developers who are crafting people's experiences, we cannot
@@ -67,7 +67,7 @@ const About = () => {
         <div className="tech-stack-intro">
           <h6>Skills and Tools</h6>
           <div className="tech-stack-indicator">
-            <div className="tech-stack-bar"></div>
+            <div className="tech-stack-bar" id="tech-stack-bar"></div>
             <div className="tech-stack-bar-text">
               <span>Occasionally</span>
               <span>Frequently Used</span>
