@@ -372,21 +372,79 @@ const MiniProjectsData = [
     linkLive: `https://paribhandarkar.github.io/dark-mode-toggle/`,
   },
   {
-    summary: "Mouse Movement",
+    summary: "Mouse Event",
     descriptionHeading: `Brief Description:`,
-    description: `This project is a simple implementation of a dark mode toggle switch for a webpage. When the switch is toggled on, the background color of the webpage changes to a dark theme, and the switch circle changes color as well. The implementation is done using HTML, CSS, and JavaScript. The HTML contains the switch input element and label, while the CSS is used to style the switch elements and animate the switch circle. The JavaScript code handles the functionality of the switch, updating the webpage's background color and storing the user's preference using local storage. The result is a basic but effective way to add a dark mode toggle feature to a webpage.`,
+    description: `This project is a simple web page that displays the X and Y position of the user's mouse cursor as it moves around the screen. The page consists of two boxes, each with a heading that indicates whether it's showing the X or Y position. As the user moves their mouse, the values in the boxes update in real time to show the current X and Y positions of the cursor. The page is styled using CSS to have a green and white color scheme, with the boxes centered on the page and given a border and spacing for visual appeal. This project is a good example of using JavaScript to dynamically update HTML elements based on user interactions with the page.`,
     newHeading: `New things I learned:`,
-    newDescription: `1. I learned about localStorage, which is a built-in web API that allows web developers to store data on a user's local machine. It provides a simple way to save data locally and retrieve it later.
-    2. JSON.stringify(): I also learned about the JSON.stringify() method, which is a built-in JavaScript method that is used to convert a JavaScript object into a JSON string. JSON stands for JavaScript Object Notation and is a lightweight format for storing and transporting data.
-    3. localStorage.setItem(): Another thing I learned was the localStorage.setItem() method, which is used to store a key-value pair in the browser's local storage. The setItem() method takes two arguments: the name of the key and the value you want to store.
-    4. localStorage.getItem(): I learned about the localStorage.getItem() method, which is used to retrieve a value stored in the browser's local storage. The getItem() method takes the name of the key as an argument and returns the corresponding value.
-    5. JSON.parse(): I also learned about the JSON.parse() method, which is a built-in JavaScript method that is used to convert a JSON string back into a JavaScript object. This method is the opposite of JSON.stringify().
-    
-    Overall, I learned about how to use localStorage to store and retrieve data on a user's local machine, as well as how to use JSON.stringify() and JSON.parse() to convert data between a JavaScript object and a JSON string. These skills can be useful for building web applications that need to store and retrieve user preferences or other data on the user's device.`,
+    newDescription: `So, in this project, I used backticks in JavaScript to create a template literal. The template literal helps me to include variables or expressions inside them by wrapping them with \${}. I used this to update the HTML element's content to display the current mouse position values. To do this, I used the window.addEventListener() method to listen for the mousemove event. Then, I updated the innerHTML property of the .container element with the template literal to display the current mouse position values. Overall, this project helped me to learn how to dynamically update HTML elements based on user interaction using JavaScript.`,
     challengesHeading: `Challenges I faced:`,
     challengesDescription: `I've had some difficulty understanding some of the JavaScript methods used in the code of this project. Specifically, I had trouble understanding localStorage.setItem(), localStorage.getItem(), and JSON.parse(), and how to use them in the context of the project. `,
-    linkSource: `https://github.com/paribhandarkar/dark-mode-toggle`,
-    linkLive: `https://paribhandarkar.github.io/dark-mode-toggle/`,
+    linkSource: `https://github.com/paribhandarkar/mouse-event`,
+    linkLive: `https://paribhandarkar.github.io/mouse-event/`,
+  },
+  {
+    summary: "Random Photos",
+    descriptionHeading: `Brief Description:`,
+    description: `This project is a simple webpage that displays a grid of random images using the Picsum API. The images are displayed inside a container with a shadow effect, and there is a button that allows you to load more images to the container. Clicking the button will add 9 new images to the container, each with a unique random number assigned to it by the API. The webpage also includes some basic styling using CSS, such as setting the background color and adding some padding to the button. Overall, it's a simple but fun project for displaying a variety of random images on a webpage.`,
+    linkSource: `https://github.com/paribhandarkar/random-photos`,
+    linkLive: `https://paribhandarkar.github.io/random-photos/`,
+  },
+  {
+    summary: "Q&A Section",
+    descriptionHeading: `Brief Description:`,
+    description: `This code is a basic implementation of an accordion-style Q&A section using HTML, CSS, and JavaScript.
+
+    The HTML section contains a section with a class of "questions" that contains multiple articles, each representing a question and answer.
+    
+    The JavaScript section selects all elements with a class of "question" and attaches a click event listener to their "btn" child element. When clicked, the "question-text" div toggles its visibility by adding or removing a "show-text" class from the "question" div. The "show-text" class is defined in the CSS to have a height of auto and overflow: visible, making the answer visible when added. The JavaScript code controls the display of the answers when the user clicks the plus/minus button, toggling the visibility of the answer text.`,
+    linkSource: `https://github.com/paribhandarkar/q-a-section`,
+    linkLive: `https://paribhandarkar.github.io/q-a-section/`,
+  },
+  {
+    summary: "Sidebar Menu",
+    descriptionHeading: `Brief Description:`,
+    description: `I created a sidebar menu using HTML, CSS, and JavaScript. It has a hamburger icon that toggles the visibility of the sidebar. When the icon is clicked, the sidebar appears with a header, a logo, and a list of menu items. I styled the menu links and the hamburger icon using CSS. To add interactivity, I used JavaScript to create event listeners for the icon and the close button. When the icon is clicked, the sidebar is shown by adding a "show-sidebar" class to the HTML element, and when the close button is clicked, the class is removed, hiding the sidebar. It's a simple project, but it demonstrates the use of basic web development skills to create an interactive user interface.`,
+    linkSource: `https://github.com/paribhandarkar/sidebar-menu`,
+    linkLive: `https://paribhandarkar.github.io/sidebar-menu/`,
+  },
+  {
+    summary: "Auto-text Animation Effect",
+    descriptionHeading: `Brief Description:`,
+    description: `This project is an auto text effect animation built with HTML, CSS, and JavaScript. The animation automatically cycles through an array of different career options and updates the text content of a container element with each career string. The text effect creates a typing effect by incrementally adding characters to the displayed text until the full career string is shown. Once the full string is displayed, the animation moves to the next career option and starts again. The animation continues in this way, looping through the array of career options. It's a fun and engaging way to showcase different career options and grab the viewer's attention.`,
+    newHeading: `New things I learned:`,
+    newDescription: `During this project, I learned some new things about JavaScript functions and animations. Specifically, I learned about the setTimeout() function and how it can be used to set a timer for executing a function after a specified delay. In this project, the setTimeout(updateText, 400) function was used to update the characters of the current career string and create a typing effect.
+
+    I also learned about the logic behind cycling through an array of different career options and updating the text content with each career string. The code checks if the characterIndex variable is equal to the length of the current career string, and if so, it increments the careerIndex variable to move on to the next career option and resets the characterIndex variable to zero to start displaying the new career string from the first character.
+    
+    Overall, this project was a great learning experience for me, and I feel more confident in my ability to understand and work with JavaScript functions and animations.`,
+    challengesHeading: `Challenges I faced:`,
+    challengesDescription: `I faced a challenge in understanding which part of the code is responsible for updating the characters and which part is responsible for updating the careers in this auto text effect animation. Specifically, I was unsure if the setTimeout(updateText, 400) function was used to update the character or the career.
+
+    After looking closely at the code and experimenting with different values, I realized that the setTimeout(updateText, 400) function is used to update the characters of the current career string. It sets a timer to call the updateText() function after a specified delay, which updates the displayed text content with the next character in the current career string.
+    
+    This understanding helped me to see how the animation works as a whole, and I was able to better appreciate the logic of the code. However, I still found it challenging to follow the specific steps that the code takes to cycle through each career option and display the corresponding text content. Overall, this experience was a good learning opportunity, and I feel more confident in my understanding of JavaScript functions and animations.`,
+    linkSource: `https://github.com/paribhandarkar/auto-text-animation-effect`,
+    linkLive: `https://paribhandarkar.github.io/auto-text-animation-effect/`,
+  },
+  {
+    summary: "Profile Statistics",
+    descriptionHeading: `Brief Description:`,
+    description: `This project is a simple webpage that displays some statistics about a person's experience in web development. The page features three "stats containers," each containing an icon, a heading, and a number. The number represents the person's progress towards a data ceiling in each category.
+
+    For example, one of the stats containers displays an icon of a cloud and the heading "Websites made," and the number increments from 0 to 260. The JavaScript code is responsible for animating the number counter by incrementing it gradually until it reaches the data ceiling. The CSS code provides some basic styling for the stats containers and the page itself.
+    
+    Overall, this project demonstrates some fundamental skills in web development, including HTML, CSS, and JavaScript. It also showcases some basic design principles, such as the use of icons and color to enhance visual appeal.`,
+    newHeading: `New things I learned:`,
+    newDescription: `In this project, I learned about custom attributes in HTML. Custom attributes are attributes that are added to HTML elements by the programmer, which are not recognized by the browser, but can be used by JavaScript or CSS to manipulate or style the element. In this project, the data-ceil
+    custom attribute was added to the counter element to define the final value of the counter. By setting this attribute to a specific value, JavaScript code was able to increment the counter until it reached the value defined in the data-ceil attribute.`,
+    challengesHeading: `Challenges I faced:`,
+    challengesDescription: `One challenge that I faced when trying to adjust the number used for the increment calculation was determining the optimal value that would produce the desired animation effect. Dividing by a value that is too high could cause the animation to appear sluggish, while dividing by a value that is too low could make the animation appear jumpy and unrefined.
+
+    Another challenge that I encountered was ensuring that the animation progressed smoothly and continuously until it reached the data ceiling. This required careful timing of the increment function calls and making sure that the counter element was updated with the correct value at each step.
+    
+    Overall, tweaking the increment value to achieve the desired animation effect was a bit of a trial-and-error process, but with some experimentation and fine-tuning, I was able to achieve the desired result.`,
+    linkSource: `https://github.com/paribhandarkar/profile-statistics`,
+    linkLive: `https://paribhandarkar.github.io/profile-statistics/`,
   },
 ];
 
