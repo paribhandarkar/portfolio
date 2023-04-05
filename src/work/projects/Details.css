@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fanwood+Text:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading-text: "Changa One", cursive;
+  --body-text: "Fanwood Text", serif;
+  --cream: #f8eeec;
+  --orange: #e85c3b;
+  --black: #222222;
+  --pink: #ffc3de;
+  --red: #e32450;
+  --midnight-blue: #181c52;
+  --border: 2px solid var(--black);
+}
+
+.main-details {
+  width: 85%;
+  margin: 1% auto;
+  border: var(--border);
+  padding: 1% 2%;
+  background-color: var(--cream);
+}
+
+.project-summary {
+  background-color: var(--cream);
+  font-family: var(--heading-text);
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.descriptionHeading,
+.newHeading,
+.challengesHeading {
+  font-family: var(--body-text);
+  text-align: left;
+  margin: 2% 0;
+}
+
+.description-mini-project,
+.newDescription,
+.challengesDescription {
+  font-family: var(--body-text);
+  text-align: justify;
+}
+
+.button-zone {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+  .project-summary {
+    font-size: 25px;
+  }
+
+  .descriptionHeading,
+  .newHeading,
+  .challengesHeading {
+    font-size: large;
+  }
+
+  .main-details{
+  padding: 5%;
+  margin: 3% auto;
+  }
+}

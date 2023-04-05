@@ -22,6 +22,8 @@
 
 @media screen and (max-width: 768px) {
   .common-button{
-    padding: 10px 30px;
+    padding: 8px 20px;
+    font-size: 18px;
+    border-radius: 20px;
   }
 }

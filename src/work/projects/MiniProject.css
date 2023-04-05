@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fanwood+Text:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading-text: "Changa One", cursive;
+  --body-text: "Fanwood Text", serif;
+  --cream: #f8eeec;
+  --orange: #e85c3b;
+  --black: #222222;
+  --pink: #ffc3de;
+  --red: #e32450;
+  --midnight-blue: #181c52;
+  --border: 2px solid var(--black);
+}
+
+#mini-projects-section {
+  margin: 3%;
+  padding: 3%;
+}
+
+.mini-projects-intro h4 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62.7953px;
+  font-family: var(--heading-text);
+  text-align: center;
+  margin: 2% auto;
+}
+
+.mini-projects-intro p {
+  font-family: var(--body-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  text-align: justify;
+  margin-bottom: 3%;
+  padding: 0 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .mini-projects-intro h4 {
+    font-size: 32px;
+  }
+
+  .mini-projects-intro p {
+    font-size: 18px;
+    margin: 7% 0;
+  }
+}
