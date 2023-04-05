@@ -446,6 +446,126 @@ const MiniProjectsData = [
     linkSource: `https://github.com/paribhandarkar/profile-statistics`,
     linkLive: `https://paribhandarkar.github.io/profile-statistics/`,
   },
+  {
+    summary: "Feedback UI",
+    descriptionHeading: `Brief Description:`,
+    description: `This project is a feedback UI that allows users to give feedback on a website or application. It consists of three rating icons representing different levels of satisfaction, where users can click on the one that best represents their feedback. Once the user selects their level of satisfaction, they can click on the "Send Review" button, which will display a message thanking the user for their feedback and showing the level of satisfaction they selected. The UI is styled with a yellow background color and black borders for the elements inside. This project provides a simple and effective way for users to provide feedback on a website or application.`,
+    newHeading: `New things I learned:`,
+    newDescription: `1. Working with event listeners in JavaScript to trigger actions based on user interaction.
+    2. The importance of understanding the event object in JavaScript and how it can be used to access information about the event that was triggered.
+    3. Working with DOM manipulation in JavaScript, including selecting elements and modifying their properties or content.
+    4. The concept of parent nodes and how they can be used to access other elements within the same HTML structure.
+    5. Writing functions in JavaScript to perform specific tasks and how to call those functions based on user actions.
+    6. Troubleshooting common issues that can arise when working with JavaScript and HTML, such as issues with event listeners or selecting the correct elements.`,
+    challengesHeading: `Challenges I faced:`,
+    challengesDescription: `So, when I was working on this project, I encountered a couple of challenges. Firstly, when I tried to select the rating by clicking on the emoji, I found that I was able to fetch the text, but not the emoji itself. To overcome this issue, I had to use the parentNode property to access the emoji element and retrieve the text.
+
+    Secondly, I noticed that when I selected a rating, the currently selected emoji would remain active, in addition to the newly selected one. To fix this, I created a function called removeActive that would remove the active class from all rating elements before applying it to the newly selected element. This ensured that only one rating element would be active at any given time.`,
+    linkSource: `https://github.com/paribhandarkar/feedback-ui`,
+    linkLive: `https://paribhandarkar.github.io/feedback-ui/`,
+  },
+  {
+    summary: "Temperature Convertor",
+    descriptionHeading: `Brief Description:`,
+    description: `So this project is a temperature converter application that allows users to easily convert temperatures between Celsius, Fahrenheit, and Kelvin. The user interface is simple and intuitive, with three input fields for each unit of temperature. Whenever the user changes the value in one of the input fields, the "computeTemp" function is triggered, which automatically calculates and updates the other input fields based on the selected temperature unit. The result is displayed with a maximum of two decimal places for accuracy.
+
+    The code is written in HTML, CSS, and JavaScript, and uses the switch statement to handle different temperature units. The design is modern and aesthetically pleasing, with a gradient background and bold, readable fonts. Overall, this project is a great example of a practical and functional web application that can be used by anyone who needs to quickly convert temperatures.`,
+    newHeading: `New things I learned:`,
+    newDescription: `I learned about the onChange attribute. 
+
+    onchange is an HTML attribute that can be used with input elements such as text boxes, drop-down lists, and radio buttons. It is an event handler that gets triggered whenever the user changes the value of the input field and then moves the focus away from that element.
+    
+    The onchange attribute can be used to specify a JavaScript function that will be executed when the user changes the value of the input field. This function can perform various actions, such as validating the input or updating other elements on the page based on the user's input.
+    
+    For example, in the temperature converter code, the onchange attribute is used with the Celsius, Fahrenheit, and Kelvin input fields to trigger the computeTemp function whenever the user changes the temperature value in any of those fields.`,
+    linkSource: `https://github.com/paribhandarkar/temperature-converter`,
+    linkLive: `https://paribhandarkar.github.io/temperature-converter/`,
+  },
+  {
+    summary: "Background Video",
+    descriptionHeading: `Brief Description:`,
+    description: `This is a project that I created using HTML, CSS, and JavaScript. It demonstrates how to create a full-screen background video for a webpage, along with a preloader to show while the video is loading. The webpage features a video background with a low brightness filter to create a subtle and visually appealing effect. I also added a header element containing a title and a play/pause button that allows the user to control the playback of the video.
+
+    In terms of the JavaScript code, I handled the user interaction by toggling the play/pause state of the video and updating the button icon accordingly. Furthermore, I made sure that the preloader is hidden once the video has finished loading using the window.load event. Overall, I think this project is a good example of some basic concepts of web development, including working with HTML video elements, styling with CSS, and adding interactivity using JavaScript.`,
+    newHeading: `New things I learned:`,
+    newDescription: `I recently learned two new things. The first is the JavaScript event listener "window.addEventListener('load', ...)", which waits for the page to finish loading before executing a specified function. This is useful for ensuring that all elements on a page are available for manipulation or interaction through JavaScript. 
+
+    The second is the HTML attribute "aria-hidden", which is used to hide an element from assistive technologies such as screen readers. It's important to use this attribute correctly to ensure website accessibility for users who rely on assistive technologies.`,
+    linkSource: `https://github.com/paribhandarkar/background-video`,
+    linkLive: `https://paribhandarkar.github.io/background-video/`,
+  },
+  {
+    summary: "Tabs Section",
+    descriptionHeading: `Brief Description:`,
+    description: `This project is a simple tabs interface built using HTML, CSS, and JavaScript. It allows the user to switch between different content sections by clicking on tabs that correspond to each section. The tabs and their corresponding sections are styled with CSS, and the switching functionality is implemented using JavaScript. When a tab is clicked, the active tab is highlighted, and the corresponding section is displayed while hiding the other sections. This project can be easily modified and integrated into other web pages that require a similar tabs interface.`,
+    linkSource: `https://github.com/paribhandarkar/tabs-section`,
+    linkLive: `https://paribhandarkar.github.io/tabs-section/`,
+  },
+  {
+    summary: "Counter",
+    descriptionHeading: `Brief Description:`,
+    description: `This is a simple counter application that allows you to increase, decrease, and reset a numerical value. The project consists of a heading, a numerical value displayed in a large font size, and three buttons that allow you to manipulate the value. The plus button increases the value, the minus button decreases it, and the reset button sets the value back to zero. The JavaScript code behind the project listens for button clicks and updates the numerical value accordingly. Additionally, the color of the numerical value changes depending on whether it is positive, negative, or zero. This project is a great example of how to use basic HTML, CSS, and JavaScript to create a functional and visually appealing application.`,
+    linkSource: `https://github.com/paribhandarkar/counter`,
+    linkLive: `https://paribhandarkar.github.io/counter/`,
+  },
+  {
+    summary: "Navbar Menu",
+    descriptionHeading: `Brief Description:`,
+    description: `This project is a responsive navbar menu with a hamburger icon that toggles the display of the menu on click. The menu is styled with CSS, and the JavaScript code uses the DOM API to select the hamburger icon and the menu, and adds an event listener to toggle the "show-menu" class on the menu when the hamburger icon is clicked. This allows the menu to be hidden on small screens and displayed on larger screens, improving the user experience on different devices. The project is easy to implement and customize for your own website.`,
+    linkSource: `https://github.com/paribhandarkar/navbar-menu`,
+    linkLive: `https://paribhandarkar.github.io/navbar-menu//`,
+  },
+  {
+    summary: "BMI Calculator",
+    descriptionHeading: `Brief Description:`,
+    description: `So this is a simple BMI Calculator web application that allows users to calculate their BMI based on their height and weight inputs. Once the user enters their height and weight in the input fields and clicks the "Compute BMI" button, the application calculates the BMI using the formula (weight in kilograms divided by the square of height in meters).
+
+    The calculated BMI value is displayed on the output display with two decimal places. The application also displays the weight condition based on the calculated BMI value, which can be either underweight, normal weight, overweight, or obesity.
+    
+    The application is built using HTML, CSS, and JavaScript. The HTML defines the structure of the page, including the input fields, button, and output display. The CSS sets the styling of the page, including the background color, font family, and positioning of the elements. The JavaScript is used to calculate the BMI and weight condition based on user input and display the results on the page.
+    
+    Overall, this is a simple yet functional application that can help users quickly determine their BMI and weight condition.`,
+    challengesHeading: `Challenges I faced:`,
+    challengesDescription: `Throughout this project, I faced a few challenges that I had to overcome. The biggest one was realizing that the input function takes in strings and not numbers, which caused me to get "NaN" as the answer. Once I realized this, I was able to convert the input to a number, and the problem was solved.
+
+    I also encountered an issue with rounding the BMI value to two decimal places with the toFixed() method. Although I was familiar with its usage, I couldn't get it to work for some reason. This situation is typical in coding when everything appears correct, yet there's no output. Nevertheless, after some experimentation, it unexpectedly began functioning, and I was able to round the value to two decimal places.`,
+    linkSource: `https://github.com/paribhandarkar/BMI-calculator`,
+    linkLive: `https://paribhandarkar.github.io/BMI-calculator/`,
+  },
+  {
+    summary: "Weight Converter",
+    descriptionHeading: `Brief Description:`,
+    description: `This project is a simple weight converter calculator that allows you to convert pounds to kilograms. It's a basic web page with an input field where you can type in your weight in pounds. As soon as you enter a value in the input field, the calculator will automatically convert the weight to kilograms and show you the result.
+
+    The result is displayed below the input field in a span element with the class .final-answer. If you make an error and enter an invalid input, an error message will be displayed in a p element with the class .error-line.
+    
+    The calculator uses a weightConvert() function written in JavaScript to perform the conversion. The function checks if the input value is valid and then converts it to kilograms if it is. It also includes a timeout function to clear the error message and the result after a certain amount of time has passed.
+    
+    Overall, this project is a simple and useful tool for anyone looking to quickly convert their weight from pounds to kilograms!`,
+    newHeading: `New things I learned:`,
+    newDescription: `I learned about using setTimeout() and clearTimeout() functions in JavaScript for implementing timed events. These functions are useful for displaying messages, animations, or updating data after a specified period.
+
+    Additionally, I also learned about the oninput attribute in HTML, which allows me to execute a JavaScript function whenever the input value of an HTML element is changed. In the code snippet provided, oninput is used to call the weightConvert() function whenever I type a new value in the input field. This ensures that the weight conversion is performed in real-time as I type, and the result is immediately displayed on the screen. These are handy features to know for building interactive and responsive web applications.`,
+    challengesHeading: `Challenges I faced:`,
+    challengesDescription: `One of the challenges that I faced while working on the weight converter project was figuring out how to handle negative numbers. When I inputted negative numbers or just a negative sign, the result would display as 0.00, which wasn't what I wanted. I tried a few things to fix this issue, but nothing seemed to work.
+
+    After doing some research, I discovered that I could use the isNaN() function to check if the input was not a number. I then added an additional condition to the validation check in the weightConvert() function to ensure that the input was not only greater than 0 but also not NaN.
+    
+    Another issue I faced was that the error message would continue to display even after entering a valid input. I realized that I needed to add the clearTimeout() function within the else block of the weightConvert() function to clear the timeout set by the error message when a valid input was entered. This allowed me to display the result without the error message continuing to show.
+    
+    Overall, it was a learning experience, and I was able to overcome these challenges by doing research and experimenting with different solutions.`,
+    linkSource: `https://github.com/paribhandarkar/weight-converter`,
+    linkLive: `https://paribhandarkar.github.io/weight-converter/`,
+  },
+  {
+    summary: "Double Landing Page",
+    descriptionHeading: `Brief Description:`,
+    description: `This project is a double landing page built using HTML, CSS, and JavaScript. The landing page features two split sections, one for Apple and the other for Samsung, with each section displaying an image and text. The split sections are positioned absolutely and take up 50% of the container's width each. When the user hovers over the left or right split section, the container element is given the active-left or active-right class, respectively, which modifies the width of the split sections. This provides an interactive experience for the user. The project provides a basic template for building landing pages with interactivity.`,
+    newHeading: `New things I learned:`,
+    newDescription: `I learned about the "mouseenter" and "mouseleave" events in JavaScript. These events are used to detect when the mouse enters or leaves an HTML element. They are commonly used in web development to trigger various actions such as showing or hiding elements, changing the appearance of elements, or modifying the behavior of an element in response to user interaction. These events are important for creating interactive web applications or improving the user experience of a website.`,
+    linkSource: `https://github.com/paribhandarkar/double-landing-page`,
+    linkLive: `https://paribhandarkar.github.io/double-landing-page/`,
+  },
 ];
 
 export default MiniProjectsData;
