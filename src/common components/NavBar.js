@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import logo from "./logo.svg";
 import "./NavBar.css";
 import { NavLink } from "react-router-dom";
-import bars from "./bars-solid.svg";
-// import cross from "./rectangle-xmark-regular.svg";
 
 const NavBar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -64,14 +62,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-{
-  /* <div className={isMobile ? "nav-section-mobile" : "nav-section"}> */
-}
-{
-  /* {isMobile ? (
-          <img src={bars} alt="nav-icon" />
-        ) : (
-          <img src={cross} alt="x-bar" />
-        )} */
-}
