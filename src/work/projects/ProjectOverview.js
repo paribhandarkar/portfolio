@@ -22,7 +22,7 @@ const ProjectOverview = () => {
           </p>
           <div className="overview-button-section">
             <a
-              href="https://github.com/paribhandarkar/portfolio"
+              href="https://github.com/paribhandarkar/project-rice"
               target="_blank"
               rel="noreferrer"
             >
@@ -83,12 +83,14 @@ const ProjectOverview = () => {
                 Source Code
               </button>
             </a>
-            <button
-              className="overview-button secondary"
-              id="portfolio-button-code"
-            >
-              Code Journey
-            </button>
+            <NavLink to="portfolio-code-journey">
+              <button
+                className="overview-button secondary"
+                id="portfolio-button-code"
+              >
+                Code Journey
+              </button>
+            </NavLink>
           </div>
         </div>
       </div>

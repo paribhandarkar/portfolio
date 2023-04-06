@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fanwood+Text:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading-text: "Changa One", cursive;
+  --body-text: "Fanwood Text", serif;
+  --cream: #f8eeec;
+  --orange: #e85c3b;
+  --black: #222222;
+  --pink: #ffc3de;
+  --red: #e32450;
+  --midnight-blue: #181c52;
+  --border: 2px solid var(--black);
+}
+
+.portfolio-desc-page {
+  background: rgb(248, 238, 236);
+  background-image: linear-gradient(
+    to bottom,
+    #ffc3de,
+    #ffcbdc,
+    #ffd3db,
+    #ffdbdd,
+    #fde3e2,
+    #fde3e2,
+    #fde3e2,
+    #fde3e2,
+    #ffdbdd,
+    #ffd3db,
+    #ffcbdc,
+    #ffc3de
+  );
+}
+
+.portfolio-desc-header-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+  padding: 0 3%;
+}
+
+.portfolio-desc-page h4 {
+  font-family: var(--heading-text);
+  font-size: 60px;
+  margin: 5% auto;
+  text-align: center;
+}
+
+.portfolio-desc-page p {
+  font-family: var(--body-text);
+  margin: 2% 10%;
+  text-align: justify;
+}
