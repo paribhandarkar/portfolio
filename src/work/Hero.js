@@ -32,7 +32,7 @@ const Hero = () => {
         A design-minded front-end software engineer focused on building
         beautiful interfaces & experiences.
       </h2>
-      <Button text="Resume" link="https://www.google.com/" />
+      <Button text="Resume" link="https://www.figma.com/proto/N2Dhveyz9PteMqRIF4LPCN/Simple-Resume%2FCV-Template-(Community)?node-id=310-34&scaling=scale-down-width&page-id=303%3A23&hide-ui=1"/>
     </div>
   );
 };
