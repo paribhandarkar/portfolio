@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fanwood+Text:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading-text: "Changa One", cursive;
+  --body-text: "Fanwood Text", serif;
+  --cream: #f8eeec;
+  --orange: #e85c3b;
+  --black: #222222;
+  --pink: #ffc3de;
+  --red: #e32450;
+  --midnight-blue: #181c52;
+  --border: 2px solid var(--black);
+}
+
+.staple-desc-detailed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background: rgb(248, 238, 236);
+  background-image: linear-gradient(to bottom, #ffc3de, #ffcbdc, #ffd3db, #ffdbdd, #fde3e2, #fde3e2, #fde3e2, #fde3e2, #ffdbdd, #ffd3db, #ffcbdc, #ffc3de);
+  /* background: linear-gradient(
+    0deg,
+    rgba(248, 238, 236, 1) 13%,
+    rgba(255, 195, 222, 1) 100%
+  ); */
+}
+
+.staple-desc-detailed h2 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 62.7953px;
+  font-family: var(--heading-text);
+}
+
+.staple-brief-intro,
+.staple-actual-desc {
+  display: grid;
+  grid-template-columns: auto auto;
+  font-family: var(--body-text);
+  margin: 5%;
+  text-align: justify;
+  column-gap: 4%;
+  row-gap: 4%;
+}
+
+.staple-image-gallery {
+  display: grid;
+
+  grid-template-columns: auto auto;
+  column-gap: 4%;
+  margin: 5%;
+  row-gap: 4%;
+  justify-items: center;
+}
+
+.staple-image-gallery img {
+  width: 80%;
+  border: var(--border);
+  border-radius: 15px;
+}
+
+.staple-actual-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.staple-actual-desc p{
+    margin: 5% auto;
+}
+
+.staple-actual-desc ul{
+    margin: 3%;
+}
+
+@media screen and (max-width:768px) {
+    .staple-desc-detailed h2 {
+        font-size: 35px;
+        padding: 3%;
+    }
+}

@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fanwood+Text:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading-text: "Changa One", cursive;
+  --body-text: "Fanwood Text", serif;
+  --cream: #f8eeec;
+  --orange: #e85c3b;
+  --black: #222222;
+  --border: 2px solid var(--black);
+}
+
+.video-responsive {
+  /* overflow: hidden; */
+  padding: 1.25%;
+  /* position: relative; */
+  /* height: 10; */
+  margin: auto;
+}
+
+.video-responsive iframe {
+  /* left: 0; */
+  /* top: 0; */
+  height: 300px;
+  min-width: 800px;
+  /* width: 80%; */
+  border-radius: 20px;
+  border: var(--border);
+  /* position: absolute; */
+}
+
+@media screen and (max-width: 768px) {
+  .video-responsive iframe{
+    min-width: 350px;
+  }
+}
+

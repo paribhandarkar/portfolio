@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Fanwood+Text:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --heading-text: "Changa One", cursive;
+  --body-text: "Fanwood Text", serif;
+  --cream: #f8eeec;
+  --orange: #e85c3b;
+  --black: #222222;
+  --pink: #ffc3de;
+  --red: #e32450;
+  --midnight-blue: #181c52;
+  --border: 2px solid var(--black);
+}
+
+.contact-heading img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+.contact-heading {
+    font-family: var(--body-text);
+    font-size: 25px;
+    text-align: center;
+}
+
+.contact-heading p{
+    padding-top: 4%;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-heading p{
+        font-size: 16px;
+    }
+}
+
+

@@ -38,12 +38,14 @@ const ProjectOverview = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <button
-                className="overview-button secondary"
-                id="staple-button-code"
-              >
-                Code Journey
-              </button>
+              <NavLink to="staple-code-journey">
+                <button
+                  className="overview-button secondary"
+                  id="staple-button-code"
+                >
+                  Code Journey
+                </button>
+              </NavLink>
             </a>
           </div>
         </div>
@@ -91,7 +93,7 @@ const ProjectOverview = () => {
         </div>
       </div>
       <h4 className="loved-project-heading">
-        <NavLink to="/mini-projects" >
+        <NavLink to="/mini-projects">
           Projects that still deserve love →
         </NavLink>
       </h4>

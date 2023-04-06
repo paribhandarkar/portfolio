@@ -4,6 +4,7 @@ import Contact from "./contact/Contact";
 import Work from "./work/Work";
 import NavBar from "./common components/NavBar";
 import MiniProjects from './work/projects/MiniProjects'
+import StapleDesc from "./work/projects/StapleDesc";
 const LazyAbout = React.lazy(() => import("./about/About"));
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         />
         <Route path="contact" element={<Contact />} />
         <Route path="mini-projects" element={<MiniProjects />}/>
+        <Route path="staple-code-journey" element={<StapleDesc />}/>
       </Routes>
     </BrowserRouter>
   );
