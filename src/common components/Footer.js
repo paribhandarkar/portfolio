@@ -85,11 +85,13 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <Button text="Let's talk" />
+        <Button text="Let's talk" link="mailto: bhandarkarpari@gmail.com" />
       </div>
 
       <div className="last-line">
-        <p id="last-line">This is all there is. Were you expecting more? It's okay, me too.</p>
+        <p id="last-line">
+          This is all there is. Were you expecting more? It's okay, me too.
+        </p>
       </div>
     </>
   );
